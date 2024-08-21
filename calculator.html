@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shrishti calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    
+  </head>
+  <body>
+    <fieldset>
+      <legend style="font-size: larger"><b>Shri Calculator</b></legend>
+      <center>
+        <div id="calculator">
+          <input
+            type="text"
+            name=""
+            class="dis"
+            id="display"
+            placeholder="00"
+            style="
+              height: 50px;
+              width: 220px;
+              margin: 5px;
+              margin-top: 10px;
+              border: 2px solid;
+              border-radius: 5px;
+              font-size: larger;
+              font-weight: bold;
+            "
+          />
+          <br />
+
+
+          <button class="but"
+             onclick="
+             curDisplay='' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+             >
+             C
+            </button>
+
+            
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'1' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            1
+          </button>
+
+
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'2' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            2
+          </button>
+          <br />
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'+' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            +
+          </button>
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'3' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            3
+          </button>
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'4' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            4
+          </button>
+          <br />
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'-' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            -
+          </button>
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'5' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            5
+          </button>
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'6' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            6
+          </button>
+          <br />
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'*' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            *
+          </button>
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'7' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            7
+          </button>
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'8' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            8
+          </button>
+          <br />
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'/' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            /
+          </button>
+
+          <button class="but" onclick="
+          let result= eval(curDisplay);
+          curDisplay= result;
+          document.querySelector('#display').value= curDisplay;
+          ">=</button>
+
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'9' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            9
+          </button>
+          <br />
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'0' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            0
+          </button>
+          <button
+            class="but"
+            onclick="
+             curDisplay=curDisplay+'.' ;
+             document.querySelector('#display').value= curDisplay;
+       "
+          >
+            .
+          </button>
+
+          <br />
+        </div>
+      </center>
+    </fieldset>
+
+    <script>
+      let curDisplay = "";
+      document.querySelector("#display").value = curDisplay;
+    </script>
+  </body>
+</html>
